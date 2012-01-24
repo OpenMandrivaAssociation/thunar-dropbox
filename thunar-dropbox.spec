@@ -1,5 +1,5 @@
 %define name	thunar-dropbox
-%define version 0.1.1
+%define version 0.2.0
 %define release %mkrel 1
 
 Summary:	Dropbox extension for Thunar
@@ -13,8 +13,8 @@ License:	GPLv3+
 Group:		Graphical desktop/Xfce
 Url:		http://www.softwarebakery.com/maato/thunar-dropbox.html
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires:	thunar
-BuildRequires:	python, thunar-devel
+Requires:	thunar >= 1.2.0
+BuildRequires:	python, thunar-devel >= 1.2.0
 
 %description
 Dropbox extension for Thunar.
@@ -42,5 +42,5 @@ find %{buildroot} -name *.so -exec chmod 755 {} \;
 %files
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING
-%_libdir/thunarx-1/*.so
+%_libdir/thunarx-2/*.so
 %_iconsdir/hicolor/*/*/%{name}.png
