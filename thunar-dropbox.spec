@@ -44,3 +44,12 @@ find %{buildroot} -name *.so -exec chmod 755 {} \;
 %doc AUTHORS ChangeLog COPYING
 %_libdir/thunarx-2/*.so
 %_iconsdir/hicolor/*/*/%{name}.png
+
+
+%changelog
+* Tue Jan 24 2012 Lev Givon <lev@mandriva.org> 0.2.0-1
++ Revision: 768060
+- Update to 0.2.0.
+- import thunar-dropbox
+
+
