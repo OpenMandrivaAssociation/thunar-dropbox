@@ -1,7 +1,7 @@
 Summary:	Dropbox extension for Thunar
 Name:		thunar-dropbox
 Version:	0.2.0
-Release:	4
+Release:	5
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	wscript.32
 Source2:	wscript.64
