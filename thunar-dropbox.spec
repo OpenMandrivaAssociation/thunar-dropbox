@@ -1,15 +1,15 @@
+%define debug_package %{nil}
+
 Summary:	Dropbox extension for Thunar
 Name:		thunar-dropbox
-Version:	0.2.0
-Release:	6
+Version:	0.2.1
+Release:	1
 Source0:	%{name}-%{version}.tar.bz2
-Source1:	wscript.32
-Source2:	wscript.64
 License:	GPLv3+
 Group:		Graphical desktop/Xfce
 Url:		http://www.softwarebakery.com/maato/thunar-dropbox.html
 Requires:	thunar >= 1.2.0
-BuildRequires:	python
+BuildRequires:	python2
 BuildRequires:	pkgconfig(thunarx-2)
 
 %description
@@ -17,18 +17,13 @@ Dropbox extension for Thunar.
 
 %prep
 %setup -q
-%ifarch x86_64
-cp -f %SOURCE2 wscript
-%else
-cp -f %SOURCE1 wscript
-%endif
 
 %build
-./waf configure --prefix=/usr
-./waf build
+python2 waf configure --prefix=%{_prefix} --libdir=%{_libdir} --verbose
+python2 waf build --verbose
 
 %install
-./waf install --destdir=%{buildroot}
+python2 waf install --destdir=%{buildroot} 
 find %{buildroot} -name *.so -exec chmod 755 {} \;
 
 %files
