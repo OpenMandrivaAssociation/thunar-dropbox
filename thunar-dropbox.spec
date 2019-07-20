@@ -10,7 +10,7 @@ Group:		Graphical desktop/Xfce
 Url:		http://www.softwarebakery.com/maato/thunar-dropbox.html
 Requires:	thunar >= 1.2.0
 BuildRequires:	python2
-BuildRequires:	pkgconfig(thunarx-2)
+BuildRequires:	pkgconfig(thunarx-3)
 
 %description
 Dropbox extension for Thunar.
