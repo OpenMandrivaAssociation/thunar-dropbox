@@ -2,9 +2,9 @@
 
 Summary:	Dropbox extension for Thunar
 Name:		thunar-dropbox
-Version:	0.2.1
+Version:	0.3.0
 Release:	1
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	https://github.com/Jeinzi/thunar-dropbox/archive/%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Graphical desktop/Xfce
 Url:		http://www.softwarebakery.com/maato/thunar-dropbox.html
