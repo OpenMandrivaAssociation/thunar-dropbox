@@ -9,4 +9,3 @@ Index: CMakeLists.txt
 -        DESTINATION "lib/thunarx-3")
 +        DESTINATION ${KDE_INSTALL_LIBDIR})
  install(FILES "data/icons/hicolor/16x16/apps/thunar-dropbox.png"
--        DESTINATION "share/icons/hicolor/16x16/apps")
