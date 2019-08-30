@@ -1,0 +1,12 @@
+Index: CMakeLists.txt
+===================================================================
+--- CMakeLists.txt
++++ CMakeLists.txt	2019-08-30 21:18:51.204243163 +0200
+@@ -38,6 +38,6 @@
+ 
+ # Installation
+ install(TARGETS thunar-dropbox
+-        DESTINATION "lib/thunarx-3")
++        DESTINATION ${KDE_INSTALL_LIBDIR})
+ install(FILES "data/icons/hicolor/16x16/apps/thunar-dropbox.png"
+-        DESTINATION "share/icons/hicolor/16x16/apps")
