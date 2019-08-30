@@ -21,7 +21,6 @@ Dropbox extension for Thunar.
 
 %build
 %cmake  -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_INSTALL_PREFIX:PATH=/usr \
         -G Ninja
 %ninja_build
 
