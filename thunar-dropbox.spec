@@ -10,7 +10,7 @@ Group:		Graphical desktop/Xfce
 Url:		http://www.softwarebakery.com/maato/thunar-dropbox.html
 Requires:	thunar
 BuildRequires:	pkgconfig(thunarx-3)
-BuildRequires:  cmake
+BuildRequires:  cmake ninja
 BuildRequires:  cmake(ECM)
 
 %description
@@ -20,10 +20,14 @@ Dropbox extension for Thunar.
 %setup -q
 
 %build
-%cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr
+%cmake  -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX:PATH=/usr \
+        -G Ninja
+%ninja_build
+
 
 %install
-%cmake_install
+%ninja_install -C build
 
 find %{buildroot} -name *.so -exec chmod 755 {} \;
 
