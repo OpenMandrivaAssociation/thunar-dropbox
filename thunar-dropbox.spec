@@ -33,5 +33,5 @@ find %{buildroot} -name *.so -exec chmod 755 {} \;
 
 %files
 %doc AUTHORS ChangeLog COPYING
-%_libdir/thunarx-3/*.so
+#_libdir/thunarx-3/*.so
 %_iconsdir/hicolor/*/*/%{name}.png
