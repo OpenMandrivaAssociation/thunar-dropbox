@@ -5,6 +5,7 @@ Name:		thunar-dropbox
 Version:	0.3.1
 Release:	1
 Source0:	https://github.com/Jeinzi/thunar-dropbox/archive/%{version}/%{name}-%{version}.tar.gz
+Patch0:         thunar-dropbox.patch
 License:	GPLv3+
 Group:		Graphical desktop/Xfce
 Url:		http://www.softwarebakery.com/maato/thunar-dropbox.html
@@ -18,6 +19,7 @@ Dropbox extension for Thunar.
 
 %prep
 %setup -q
+%autopatch -p0
 
 %build
 %cmake  -DCMAKE_BUILD_TYPE=Release \
