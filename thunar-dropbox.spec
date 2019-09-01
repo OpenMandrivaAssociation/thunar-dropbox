@@ -13,6 +13,7 @@ Requires:	thunar
 BuildRequires:	pkgconfig(thunarx-3)
 BuildRequires:  cmake ninja
 BuildRequires:  cmake(ECM)
+Recommends:     dropbox
 
 %description
 Dropbox extension for Thunar.
