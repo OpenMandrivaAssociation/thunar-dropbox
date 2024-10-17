@@ -7,7 +7,7 @@ Release:	1
 Source0:	https://github.com/Jeinzi/thunar-dropbox/archive/%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Graphical desktop/Xfce
-Url:		http://www.softwarebakery.com/maato/thunar-dropbox.html
+Url:		https://www.softwarebakery.com/maato/thunar-dropbox.html
 Requires:	thunar
 BuildRequires:	pkgconfig(thunarx-3)
 BuildRequires:  cmake ninja
