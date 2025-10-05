@@ -2,7 +2,7 @@
 
 Summary:	Dropbox extension for Thunar
 Name:		thunar-dropbox
-Version:	0.3.1
+Version:	0.3.2
 Release:	1
 Source0:	https://github.com/Jeinzi/thunar-dropbox/archive/%{version}/%{name}-%{version}.tar.gz
 License:	GPLv3+
@@ -18,8 +18,7 @@ Recommends:     dropbox
 Dropbox extension for Thunar.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 # Fix wrong libraries install path
 sed -i -e 's,lib/,%{_lib}/,g' CMakeLists.txt
 
